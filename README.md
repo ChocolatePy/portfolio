@@ -1,2 +1,1 @@
-# portfolio
-ChocolatePy :chocolate_bar:
+# portfolio :chocolate_bar:
