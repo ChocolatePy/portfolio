@@ -30,3 +30,12 @@ class GalleryItem(models.Model):
 
     def __str__(self):
         return self.title
+
+class GalleryItemComment(models.Model):
+    item = models.ForeignKey(GalleryItem)
+    name = models.CharField(max_length=30)
+    comment = models.TextField() 
+    date_time = models.DateTimeField()
+
+    def __str__(self):
+        return '{}: {}'.format(self.name, self.comment)
